@@ -1,50 +1,108 @@
-# React + TypeScript + Vite
+# Financial Dashboard Application  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview  
+The **Financial Dashboard Application** is a responsive and interactive web application that provides an overview of financial activities, card details, recent transactions, statistics, and user settings. Built with **React.js**, the app features data visualization using charting libraries, dynamic UI components, and intuitive navigation to enhance user experience.  
 
-Currently, two official plugins are available:
+## Features  
+### 1. **Dashboard Page**  
+- **My Cards Section**  
+  - Displays card details including card balance, cardholder name, and partially masked card number.  
+  - Includes a "See All" button to navigate to the full card list.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Recent Transactions**  
+  - Shows a list of recent transactions with icons, descriptions, dates, and amounts (both positive and negative).  
 
-## Expanding the ESLint configuration
+- **Weekly Activity Chart**  
+  - A bar chart visualizing daily deposit and withdrawal activities for the week.  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Expense Statistics**  
+  - A pie chart breaking down expenses into categories (e.g., Entertainment, Bills, Investments).  
 
-- Configure the top-level `parserOptions` property like this:
+- **Quick Transfer**  
+  - Displays frequent transfer contacts with profile pictures, names, and roles.  
+  - Includes an input field for transfer amounts and a "Send" button for initiating transfers (UI only).  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Balance History Chart**  
+  - A line chart showing balance trends over the past months.  
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. **Settings Page**  
+- **Tabs**:  
+  - "Edit Profile," "Preference," and "Security."  
+- **Edit Profile Section**:  
+  - Editable fields: Name, Username, Email, Password, Date of Birth, Present Address, Permanent Address, City, Postal Code, and Country.  
+  - Profile picture upload/edit feature.  
+  - "Save" button to apply changes.  
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Technical Details  
+### **1. Frameworks and Libraries**  
+- **React.js**: Front-end framework.  
+- **State Management**: Context API or Redux.  
+- **Styling**: TailwindCSS or styled-components.  
+- **Charting**: Chart.js or D3.js for data visualization.  
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### **2. API Integration**  
+- Dummy API endpoints for fetching:  
+  - User information.  
+  - Card details.  
+  - Transaction history.  
+  - Chart data.  
+
+### **3. Routing**  
+- React Router for navigating between the Dashboard and Settings pages.  
+
+### **4. Performance Optimization**  
+- Lazy loading of components to improve performance.  
+
+### **5. Accessibility**  
+- Implements basic accessibility standards, including ARIA labels and keyboard navigation.  
+
+### **6. Browser Compatibility**  
+- Tested on major browsers: Chrome, Firefox, Safari, and Edge.  
+
+## Getting Started  
+
+### Prerequisites  
+Ensure you have the following installed:  
+- Node.js  
+- npm or yarn  
+
+### Installation  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/eldadmamo/frontendsoar 
+   ```  
+2. Navigate to the project directory:  
+   ```bash  
+   cd frontendsoar 
+   ```  
+3. Install dependencies:  
+   ```bash  
+   npm install  
+   ```  
+
+### Running the Application  
+1. Start the development server:  
+   ```bash  
+   npm start  
+   ```  
+2. Open [http://localhost:5173/](http://localhost:5173/) in your browser to view the application.  
+
+### Testing the Application  
+- To run tests:  
+  ```bash  
+  npm test  
+  ```  
+
+### Deployment  
+1. Build the application:  
+   ```bash  
+   npm run build  
+   ```  
+2. Deploy the `build` folder to your preferred hosting platform.  
+
+## License  
+This project is licensed under the MIT License.  
+
+## Contact  
+For questions or support, reach out to **Eldad Fikre** at eldadfikre456@gmail.com  
+
