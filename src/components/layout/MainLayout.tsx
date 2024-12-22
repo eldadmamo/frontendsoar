@@ -1,4 +1,4 @@
-import { ReactNode} from 'react';
+import { ReactNode, useState} from 'react';
 import Header from './Header';
 import Sidebar from '../Sidebar';
 import { useLocation } from 'react-router-dom';
@@ -21,14 +21,18 @@ const pageTitles: Record<string, string> = {
 };
 
 export default function MainLayout({ children }: MainLayoutProps) {
+
   const location = useLocation();
   const currentTitle = pageTitles[location.pathname] || 'Page Not Found';
 
+  const [isSidebarVisible, setSidebarVisible] = useState(false);
+
+  const toggleSidebar = () => setSidebarVisible((prev) => !prev);
   return (
     <div className="flex min-h-screen bg-background">
-      <Sidebar />
+      <Sidebar isVisible={isSidebarVisible} onClose={toggleSidebar} />
       <div className="flex-1">
-        <Header onMenuClick={() => {}} title={currentTitle} />
+        <Header onMenuClick={toggleSidebar} title={currentTitle} />
         <main className="p-8" style={{ background: "#F9FAFB" }}>
           {children}
         </main>
