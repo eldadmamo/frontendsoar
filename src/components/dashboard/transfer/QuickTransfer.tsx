@@ -49,21 +49,25 @@ export default function QuickTransfer() {
         </div>
         <Button
           onClick={handleSlideRight}
-          className="w-10 h-10 p-0 rounded-full flex justify-center items-center bg-black text-white hover:bg-gray-800"
+          className="w-10 h-10 p-0 rounded-full flex justify-center items-center bg-white text-black "
         >
           <ChevronRight className="w-6 h-6" />
         </Button>
       </div>
-      <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
-  <label className=" text-gray-400 "  style={{ fontSize: "15px" }} >Write Amount</label>
-  <div className="relative flex-1 flex items-center">
-    <Input className="pr-20 h-12 text-lg flex-grow" />
+      <div className="flex items-center gap-4 mt-6">
+  <label className="text-gray-400 flex-shrink-0 text-sm md:text-base" style={{ fontSize: "15px" }}>
+    Write Amount
+  </label>
+  <div className="relative flex-1 flex items-center w-full">
+    <Input className="pr-20 h-12 text-lg w-full" />
     <Button className="absolute bg-black rounded-full top-1/2 right-0 -translate-y-1/2 gap-2 h-12 px-6 text-lg flex items-center">
       <span className="text-white">Send</span>
       <FaTelegramPlane className="h-6 w-6 text-white" />
     </Button>
-    </div>
   </div>
+</div>
+
+
       </div>
     </Card>
     </>

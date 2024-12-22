@@ -47,7 +47,7 @@ export default function MyCards() {
             <Button
               variant="ghost"
               size="icon"
-              className="absolute left-0 top-1/2 -translate-y-1/2"
+              className="absolute left-0 top-1/2 -translate-y-1/2  h-5 p-0 rounded-full flex justify-center items-center bg-white text-black"
               onClick={prevCard}
             >
               <ChevronLeft className="h-6 w-6" />
@@ -55,7 +55,7 @@ export default function MyCards() {
             <Button
               variant="ghost"
               size="icon"
-              className="absolute right-0 top-1/2 -translate-y-1/2"
+              className="absolute right-0 top-1/2 -translate-y-1/2  h-5 p-0 rounded-full flex justify-center items-center bg-white text-black "
               onClick={nextCard}
             >
               <ChevronRight className="h-6 w-6" />
