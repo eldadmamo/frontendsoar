@@ -12,7 +12,7 @@ const COLORS = ['#4F46E5', '#F59E0B', '#10B981', '#1F2937'];
 
 export default function ExpenseStatistics() {
   
-  const totalValue = data.reduce((acc, curr) => acc + curr.value, 0);
+  
 
   return (
     <>
@@ -70,7 +70,7 @@ export default function ExpenseStatistics() {
               }}
               labelLine={false} 
             >
-              {data.map((entry, index) => (
+              {data.map((_,index) => (
                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               ))}
             </Pie>

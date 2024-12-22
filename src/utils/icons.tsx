@@ -1,4 +1,4 @@
-import { CreditCard, DollarSign } from 'lucide-react';
+import { CreditCard } from 'lucide-react';
 import { FaPaypal } from 'react-icons/fa';
 import Love from '../assets/iconfinder.png'
 

@@ -1,6 +1,5 @@
 import { Bell } from 'lucide-react';
 import { Button } from '../ui/button';
-import { getTransactionIcon } from '../../utils/icons';
 
 export default function NotificationBell() {
   return (

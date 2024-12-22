@@ -1,8 +1,6 @@
 import { Card } from '../../ui/card';
-import TransactionItem from './TransactionItem';
 import { transactions } from '../../../data/mockData';
 import { getTransactionIcon } from '../../../utils/icons';
-import { Button } from '../../ui/button';
 
 export default function RecentTransactions() {
   return (

@@ -2,7 +2,6 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet';
 
-import { Link, useLocation } from 'react-router-dom';
 
 
 interface MobileNavProps {
@@ -11,7 +10,7 @@ interface MobileNavProps {
 }
 
 export default function MobileNav({ isOpen, onToggle }: MobileNavProps) {
-  const location = useLocation();
+  
 
   return (
     <Sheet open={isOpen} onOpenChange={onToggle}>

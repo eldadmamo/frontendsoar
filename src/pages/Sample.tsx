@@ -1,5 +1,4 @@
-import React from "react";
-import { Mastercard, Visa, Paypal } from 'react-payment-logos/dist/flat';
+import { Mastercard } from 'react-payment-logos/dist/flat';
 
 const CreditCardComponent = () => {
   return (

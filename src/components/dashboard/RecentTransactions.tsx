@@ -1,5 +1,4 @@
 import { Card } from '../ui/card';
-import { ArrowDownCircle, ArrowUpCircle } from 'lucide-react';
 
 export default function RecentTransactions() {
   const transactions = [

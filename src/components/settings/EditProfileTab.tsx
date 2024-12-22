@@ -4,7 +4,7 @@ import { Input } from '../ui/input';
 import { Label } from '../ui/label';
 import { defaultUserProfile } from '../../data/settingsData';
 import { toast } from 'sonner';
-import { Camera, Pen } from 'lucide-react';
+import { Pen } from 'lucide-react';
 
 export default function EditProfileTab() {
   const [profile, setProfile] = useState(defaultUserProfile);
